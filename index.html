@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Phone | Hardoi Phone Junction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --pink: #ff2e8c; }
+        body { background: #fffafc; font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        
+        /* Premium "H" Logo Loader */
+        #loader {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.98); z-index: 1000;
+            flex-direction: column; align-items: center; justify-content: center;
+        }
+        .h-logo-loader {
+            width: 80px; height: 80px; background: var(--pink); border-radius: 22px;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 42px; font-weight: 900;
+            animation: pulse-h 0.8s ease-in-out infinite;
+            box-shadow: 0 10px 30px rgba(255, 46, 140, 0.3);
+        }
+        @keyframes pulse-h { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+        .glass-card { background: #ffffff; border-radius: 3rem; box-shadow: 0 25px 50px -12px rgba(255, 46, 140, 0.1); border: 1px solid #fff0f6; }
+        .input-premium { background: #fdf2f7; border-radius: 1.5rem; padding: 1.2rem; font-weight: 600; outline: none; border: 2px solid transparent; transition: 0.3s; }
+        .input-premium:focus { border-color: var(--pink); background: #fff; }
+
+        .review-slider { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; gap: 20px; padding: 20px; }
+        .review-slider::-webkit-scrollbar { display: none; }
+        .review-card { min-width: 300px; background: white; padding: 30px; border-radius: 2.5rem; border: 1px solid #fff0f6; }
+        
+        /* Pulse for Sell Button */
+        .btn-pulse { animation: shadow-pulse 2s infinite; }
+        @keyframes shadow-pulse { 0% { box-shadow: 0 0 0 0px rgba(255, 46, 140, 0.4); } 100% { box-shadow: 0 0 0 20px rgba(255, 46, 140, 0); } }
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <div class="h-logo-loader">H</div>
+        <p class="mt-6 font-black text-[#ff2e8c] italic uppercase tracking-widest text-xs">Sending Details...</p>
+    </div>
+
+    <div class="bg-gray-900 text-white text-[10px] font-black uppercase tracking-[0.2em] py-2 text-center">
+        ⚠️ Attention: Yeh Website Sirf Phone <span class="text-[#ff2e8c]">BECHNE</span> Ke Liye Hai
+    </div>
+
+    <nav class="bg-white/80 backdrop-blur-xl sticky top-0 z-40 border-b border-pink-50 py-4 px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-br from-[#ff2e8c] to-[#ff7eb3] text-white w-10 h-10 rounded-xl flex items-center justify-center font-black text-xl shadow-lg">H</div>
+                <div>
+                    <h1 class="font-black text-lg uppercase italic leading-none">Hardoi <span class="text-[#ff2e8c]">Junction</span></h1>
+                    <p class="text-[7px] font-bold text-gray-400 tracking-[0.2em] uppercase">Phone Selling Point</p>
+                </div>
+            </div>
+            <a href="https://wa.me/918960898690" class="bg-green-500 text-white px-5 py-2 rounded-full font-bold text-[10px] shadow-lg flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> CONTACT US
+            </a>
+        </div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="bg-white border-2 border-pink-100 text-[#ff2e8c] px-5 py-2 rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm italic">Purana Phone Becho - Turant Cash Lo</span>
+            <h2 class="text-5xl md:text-7xl font-black text-gray-900 mt-8 leading-[1.1] italic">
+                Hardoi Ki No.1 <br><span class="text-[#ff2e8c]">Selling</span> Junction
+            </h2>
+            <p class="text-gray-500 mt-6 text-lg font-medium max-w-2xl mx-auto italic">
+                Yahan par aap sirf apna purana phone <span class="text-gray-900 font-black border-b-2 border-pink-400">BECH (SELL)</span> sakte hain. 
+                Hum khareedne (buying) ke liye koi order nahi lete.
+            </p>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="p-8 bg-white rounded-[2.5rem] border border-pink-50 text-center shadow-sm">
+            <div class="w-12 h-12 bg-pink-50 text-[#ff2e8c] rounded-2xl flex items-center justify-center mx-auto mb-4 font-black">1</div>
+            <h4 class="font-black text-sm uppercase italic">Details Bharein</h4>
+            <p class="text-[11px] text-gray-400 mt-2">Apne phone ki sahi jaankari form mein dalien.</p>
+        </div>
+        <div class="p-8 bg-white rounded-[2.5rem] border border-pink-50 text-center shadow-sm">
+            <div class="w-12 h-12 bg-pink-50 text-[#ff2e8c] rounded-2xl flex items-center justify-center mx-auto mb-4 font-black">2</div>
+            <h4 class="font-black text-sm uppercase italic">Hum Call Karenge</h4>
+            <p class="text-[11px] text-gray-400 mt-2">Humari team aapko turant best price offer karegi.</p>
+        </div>
+        <div class="p-8 bg-white rounded-[2.5rem] border border-pink-50 text-center shadow-sm">
+            <div class="w-12 h-12 bg-pink-50 text-[#ff2e8c] rounded-2xl flex items-center justify-center mx-auto mb-4 font-black">3</div>
+            <h4 class="font-black text-sm uppercase italic">Cash Le Jayein</h4>
+            <p class="text-[11px] text-gray-400 mt-2">Cinema Road shop par aayein aur turant payment lein.</p>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-6 pb-24 text-center">
+        <p class="mb-4 font-black text-[#ff2e8c] text-xs uppercase tracking-widest italic animate-bounce italic">👇 Neeche Details Bharein Aur Phone Bechein 👇</p>
+        <div id="sell" class="glass-card overflow-hidden text-left">
+            <div class="bg-gray-950 p-10 text-white text-center">
+                <h3 class="text-2xl font-black uppercase italic tracking-widest">Phone Bechna Hai?</h3>
+                <p class="text-gray-500 text-[10px] mt-2 font-bold uppercase tracking-widest italic">Yahan sirf Mobile SELL hota hai</p>
+            </div>
+
+            <form id="phoneForm" class="p-8 md:p-14 space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <input type="text" id="brand" placeholder="Mobile Brand" class="input-premium w-full" required>
+                    <input type="text" id="model" placeholder="Model Name" class="input-premium w-full" required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <select id="condition" class="input-premium w-full">
+                        <option>Condition: 10/10 (New)</option>
+                        <option>Condition: 9/10 (Minor Scratches)</option>
+                        <option>Condition: 8/10 (Used)</option>
+                        <option>Condition: Average / Rough</option>
+                    </select>
+                    <input type="number" id="price" placeholder="Kitne me bechna hai? (₹)" class="input-premium w-full" required>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <input type="text" id="location" placeholder="Hardoi Local Area" class="input-premium w-full" required>
+                    <input type="tel" id="userWhatsapp" placeholder="Aapka Contact No." class="input-premium w-full" required>
+                </div>
+
+                <textarea id="description" rows="3" placeholder="Phone ke bare me kuch aur? (RAM/Storage/Bill/Box)" class="input-premium w-full"></textarea>
+
+                <div class="p-8 bg-pink-50/50 border-2 border-dashed border-pink-200 rounded-[2rem] text-center">
+                    <i class="fas fa-camera text-[#ff2e8c] text-3xl mb-3"></i>
+                    <p class="text-[10px] font-black text-gray-500 uppercase italic">Photos Upload (Zaroori Hai)</p>
+                    <input type="file" id="photos" multiple accept="image/*" class="mt-4 block w-full text-xs text-gray-400 file:mr-4 file:py-2 file:px-6 file:rounded-full file:border-0 file:bg-gray-900 file:text-white cursor-pointer font-bold">
+                </div>
+
+                <button type="submit" class="w-full bg-[#ff2e8c] text-white font-black py-6 rounded-[2rem] shadow-2xl transition-all active:scale-95 uppercase tracking-[0.2em] text-lg btn-pulse">
+                    SUBMIT TO SELL
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <section class="py-16 bg-white border-y border-pink-50">
+        <h3 class="text-center font-black text-xl uppercase italic mb-8">Recent <span class="text-[#ff2e8c]">Successful</span> Sales</h3>
+        <div class="review-slider max-w-6xl mx-auto">
+            <div class="review-card">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center text-[#ff2e8c] text-xl font-black italic">H</div>
+                    <strong class="text-gray-800">Deepak R.</strong>
+                </div>
+                <p class="text-sm italic text-gray-500">"Pura Hardoi ghoom liya par Cinema Road pe Junction ne sabse best rate diya. Highly recommend for selling!"</p>
+            </div>
+            <div class="review-card">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center text-[#ff2e8c] text-xl font-black italic">H</div>
+                    <strong class="text-gray-800">Saurabh J.</strong>
+                </div>
+                <p class="text-sm italic text-gray-500">"Form bhara, 10 min me call aaya, aur sham ko phone bik gaya. Instant cash payment!"</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-white py-16 px-8 text-center">
+        <h3 class="text-3xl font-black uppercase italic italic tracking-tighter">Hardoi Phone <span class="text-[#ff2e8c]">Junction</span></h3>
+        <p class="text-gray-600 text-[9px] mt-4 uppercase tracking-[0.5em] font-bold">No Buying | Only Selling Marketplace</p>
+        
+        <div class="mt-12 space-y-4">
+            <p class="text-gray-400 text-xs font-bold italic uppercase tracking-widest">Contact Specialist</p>
+            <a href="tel:8960898690" class="text-3xl font-black text-white hover:text-[#ff2e8c] transition-colors">8960898690</a>
+            <div class="pt-4 flex justify-center gap-8">
+                <a href="https://wa.me/918960898690" class="text-green-500 text-2xl"><i class="fab fa-whatsapp"></i></a>
+                <p class="text-xs font-bold self-center text-gray-500 uppercase italic">Cinema Road, Hardoi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const botToken = "8426586693:AAGvdb0F0szSipHAm8NC6PAwciVLk1VRVnc";
+        const chatId = "5756664465";
+
+        document.getElementById('phoneForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            document.getElementById('loader').style.display = 'flex';
+
+            const photoFiles = document.getElementById('photos').files;
+            const textData = `📢 NEW SALE REQUEST!\n━━━━━━━━━━━━━━━━━━━━\n📍 AREA: ${document.getElementById('location').value.toUpperCase()}\n📱 DEVICE: ${document.getElementById('brand').value.toUpperCase()} ${document.getElementById('model').value}\n💎 CONDITION: ${document.getElementById('condition').value}\n💰 ASKING: ₹${document.getElementById('price').value}\n📝 INFO: ${document.getElementById('description').value}\n━━━━━━━━━━━━━━━━━━━━\n👤 CONTACT: https://wa.me/91${document.getElementById('userWhatsapp').value}`;
+
+            try {
+                const formData = new FormData();
+                formData.append('chat_id', chatId);
+
+                if (photoFiles.length > 0) {
+                    const media = [];
+                    for (let i = 0; i < Math.min(photoFiles.length, 5); i++) {
+                        formData.append(`f${i}`, photoFiles[i]);
+                        media.push({ type: 'photo', media: `attach://f${i}`, caption: i === 0 ? textData : '' });
+                    }
+                    formData.append('media', JSON.stringify(media));
+                    await fetch(`https://api.telegram.org/bot${botToken}/sendMediaGroup`, { method: 'POST', body: formData });
+                } else {
+                    await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ chat_id: chatId, text: textData })
+                    });
+                }
+                alert("SUCCESS! Details Junction tak pahunch gayi hain. Hum turant aapko call karenge.");
+                location.reload();
+            } catch (err) {
+                alert("Network issue! Please check internet.");
+            } finally {
+                document.getElementById('loader').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
